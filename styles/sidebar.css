@@ -1,0 +1,54 @@
+.sidebar {
+/*	margin: 0px 0px 0px 80%;
+	padding: 0px;
+	width: 20%;
+	height: 100vh;*/
+	overflow: auto;
+	background:hsl(234, 100%, 96.1%);
+	grid-area:sidebar;
+}
+
+.sidebar h2 {
+	display:flex;
+	justify-content: center;
+	margin:15px 0px 0px 0px;
+	color: hsl(51, 4.6%, 29.6%);
+	font: 400 1.5rem/1.2 "Roboto"; color: hsl(51, 4.6%, 29.6%);
+}
+
+/* Sidebar links */
+.sidebar a {
+	display: block;
+	padding: 10px;
+	font: 400 0.80rem/1.30 "Roboto"; 
+	color: hsl(51, 4.6%, 29.6%); 
+	box-shadow: none;
+	text-decoration: underline hsl(292, 11.9%, 73.7%);
+	/*white-space: nowrap;*/
+}
+
+/* Active/current link */
+.sidebar a.active {
+	color: hsl(49, 6.8%, 48.8%);
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+	color: hsl(49, 6.8%, 48.8%);
+}
+
+
+
+
+/*Dropdown*/
+.dropdown-content {
+	display:none;
+}
+
+.dropdown-content a {
+	margin-left:20px;
+}
+
+.dropdown-btn {
+	cursor: pointer;
+}
